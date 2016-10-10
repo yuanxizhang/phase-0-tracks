@@ -1,3 +1,25 @@
+.column-1, .column-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+
 body {
-	background-color: beige;
+  font-family: times new roman;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+h1 {
+  background-color: dodgerblue;
+}
+
+#head {
+  background-image: url("http://www.velocitywebworks.com/blog/wp-content/uploads/2015/03/Git-Icon-1788C.png")
+}
+
+header {
+  text-align: center;
 }
