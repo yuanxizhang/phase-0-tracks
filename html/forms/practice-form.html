@@ -4,28 +4,30 @@
 	<title>Practice-Form</title>
 </head>
 <body>
-	<h1>Veb Boot Camp Student Career Survey</h1>
+	<h1>Web Development Boot Camp Student Career Survey</h1>
 	<form name = "Career_Survey" action="sucess.html" method="post">
-		
+		<label>Boot camp graduation date:</label>
+			,<input type="date" name="graduationdate">
 		<h2>When do you plan to start working?</h2>
 			<input type="radio" name="timeframe" value="next week" checked>Next week<br>
 			<input type="radio" name="timeframe" value="next month">Next Month<br>
 			<input type="radio" name="timeframe" value="next year">Next year
 			<br>
 		<h2>Which type of employer do you prefer?</h2>
-			<input type="checkbox" name="employer_type" value="Small startup"> Small start up<br>
-			<input type="checkbox" name="employer_type" value="Large corporation"> Large corporation<br>
+			<input type="checkbox" name="employer_type" value="Small startup"> Small startups<br>
+			<input type="checkbox" name="employer_type" value="Large corporation"> Large corporations<br>
 			
 		<h2>Where do you plan to work?</h2>
+			<label>Plan to work in:</label>
 			<select>
 				<option value= "NY">New York</option>
 				<option value= "Chicago">Chicago</option>
 				<option value= "SF">San Francisco</option>
-				<option value= "other">other: <input type="text" name="other_city"></option>
+				<option value= "other">Other</option>
 			</select>
 		<br>
 		<h2>Please provide details of your career choice:</h2>
-			<textarea name="career_plan" rows="10" cols="50">Details of your career choice</textarea>
+			<textarea name="career_plan" rows="10" cols="100">Details of your career choice</textarea>
 		<br>
 		<br>
 		<input type= "submit" value = "Submit">
