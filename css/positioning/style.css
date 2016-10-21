@@ -1,0 +1,28 @@
+#box {
+	position: relative;
+	margin:0 auto;
+}
+
+#octopus {
+	position: absolute;
+  	top: 80px;
+  	left: 20px;
+  	margin: 0 auto;
+  	z-index: 1; 
+}
+
+#glasses {
+	position: absolute;
+  	top: 180px;
+  	left: 60px;
+  	margin: 0 auto;
+  	z-index: 3; 
+}
+
+#hat {
+	position: relative;
+  	top: 0px;
+  	left: 5px;
+  	margin: 0 auto;
+  	z-index: 2; 
+}
