@@ -1,0 +1,40 @@
+blockquote {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1.2em;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	border-left: 1px solid black;
+	border-top: 20px solid black;
+	border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-color: #A9A9A9;
+	margin-left: 1em;
+	margin-right: 0em;
+	margin-top: 0.5em;
+	padding: 1em;
+	height: 240px;
+	width: 24%;
+}	
+
+cite {
+	display: block;
+	font-weight: bold;
+	color: black;
+	margin-top: 0.6em;
+	padding: 2em, 1em;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: Arial black, 'Helvetica Neue', Helvetica, sans-serif;
+	color: orange;
+	margin-left: 0.75em;
+	margin-right: 0.5em;
+	margin-top: 0.75em;
+	margin-bottom: 0.5em;
+	padding: 0em;
+}
+
+body {
+	max-width: 75%;
+}
