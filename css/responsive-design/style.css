@@ -1,5 +1,5 @@
 body {
-  max-width: 960; 
+  max-width: 960px; 
 }
 
 main, #external-links {
@@ -9,7 +9,7 @@ main, #external-links {
 }
 
 main {
-  width: 60%;
+  width: 55%;
 }
 
 blockquote {
@@ -25,8 +25,8 @@ cite {
 
 #external-links ul {
   list-style-type: none;
-  padding-left: 0px;
-  width: 30%;
+  padding-left: 0.5em;
+  width: 35%;
 }
 
 /* you're welcome to edit the
@@ -48,14 +48,17 @@ figcaption {
 
 @media screen and (max-width: 500 px){
   body {
-    font-size: 80%;
+    font-size: 90%;
     margin: 0 auto;
+    background-color: beige;
   }
   main {
-    float: left;
+    display: block;
+    margin:auto;
   }
   #external-links {
-    float: left;
+    display: block;
+    margin: auto;
   }
 }
 
