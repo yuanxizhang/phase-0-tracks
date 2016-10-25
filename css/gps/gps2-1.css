@@ -1,25 +1,38 @@
 .column-1, .column-2 {
-  display: inline-block;
-  vertical-align: top;
-  width: 45%;
+  	display: inline-block;
+  	vertical-align: top;
+ 	 width: 45%;
+  	margin: 1em;
 }
 
 body {
-  font-family: times new roman;
-}
-
-footer {
-  margin-top: 10px;
-}
-
-h1 {
-  background-color: dodgerblue;
-}
-
-#head {
-  background-image: url("http://www.velocitywebworks.com/blog/wp-content/uploads/2015/03/Git-Icon-1788C.png")
+  	font-family: Arial;
 }
 
 header {
-  text-align: center;
+	padding: 1em;
+	margin: 1em;
+ 	text-align: center;
+ 	background-color: cornflowerblue;
+	background-image: url(octocat.jpg);
+ 	background-size: 16.5%;
+ 	background-repeat: no-repeat;
 }
+
+footer {
+	text-align: center;
+	background-color: lightgrey;
+  	margin: 1em;
+  	padding: 1em;
+}
+
+h1 {
+  	text-align: center;
+  	margin-left: 5em;
+  	color: navy;
+}
+
+#intro {
+	margin-left: 12em;
+}
+
