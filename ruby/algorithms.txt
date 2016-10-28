@@ -1,0 +1,32 @@
+Go forward until you are in front of the elevator door
+
+If there is one button next to the elevator,
+	push the button
+if there are two buttons next to the elevator,
+	If you are going up, 
+		push the top button,
+	otherwise
+		push the bottom button.
+
+
+If the elevator door opens, 
+	check if there is enough room for you,
+		until there is room for you to get in,
+		wait for the next elevator
+	If there is enough room in the elevator
+		get in the elevator	
+
+if you are inside the elevator, 
+	check if the button for your floor is pushed,
+		if it is not pushed, 
+			push the button
+		otherwise wait for the elevator to reach your floor
+
+If the display inside the elevator shows your floor,
+	check if the elevator door is open,
+		if the door is open,
+			exit the elevator
+		otherwise
+			wait for the elevator door to open	
+
+
