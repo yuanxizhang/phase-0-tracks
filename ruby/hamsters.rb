@@ -13,7 +13,7 @@ else
 end	
 print "What is the estinated age of the hamster?"
 age = gets.chomp.to_i
-if age == " "
+if age == 0
 	age = nil
 end
 
