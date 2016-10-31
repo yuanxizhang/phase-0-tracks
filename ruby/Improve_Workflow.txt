@@ -1,0 +1,5 @@
+How can your workflow improve? 
+I need to test my code frequently. I should test each after I finish each loop. So hwne I have nested loops, I will not be in trouble.
+
+What mistakes have caused you the most trouble in the past? 
+The mistake that caused me the most trouble is that I did not understand the difference between "puts" and "p", I thought they are the same, and "p" is just the shorter version of "puts".  I learned my lesson the hard way!
