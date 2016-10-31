@@ -1,5 +1,8 @@
-How can your workflow improve? 
-I need to test my code frequently. I should test each after I finish each loop. So hwne I have nested loops, I will not be in trouble.
+Here are some tips on avoiding bugs in the first place:
 
-What mistakes have caused you the most trouble in the past? 
-The mistake that caused me the most trouble is that I did not understand the difference between "puts" and "p", I thought they are the same, and "p" is just the shorter version of "puts".  I learned my lesson the hard way!
+Name your variables well. Problems will leap out at you much more easily if your code is readable.
+Indent your code properly. It's a lot easier to see a missing (or extra!) end keyword this way.
+Don't pack too much code onto one line. The line number of an error message isn't very helpful if that line has 20 method calls on it.
+Read a lot of code. The more literate you are with code, the easier it will be to see any potential problems.
+Test your code frequently. Don't write 15 lines of code and then wade through 6 error messages. You can't rely on Ruby to catch every problem for you. Every single time you write a line of code, predict what it will return, and verify that in IRB. Only add a few lines to your program at a time before testing it. Make sure you can explain every single line of code in your program.
+Commit frequently. If you check out your previous few commits and find a commit where the bug doesn't exist, guess what? You just figured out which commit broke your program. Some companies have automated tools that roll back through the commit history of a project to find the bug-free commit.
