@@ -1,0 +1,107 @@
+body {
+	background-color: ivory;
+}
+
+header {
+    background-image: url("./images/mountain_trail.jpg");
+    padding:0.1em;
+    border: 0.1em;
+}
+
+.Menu {
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    width: 30%;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h1,h2,h3,p {
+	text-align: center;
+}
+
+a:visited {
+  color: navy;
+}
+
+#my_hobbies {
+	display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#hobby1 { display: inline-block; width: 30%; margin:15px;}
+#hobby2 { display: inline-block; width: 27%; margin:15px;}
+#hobby3 { display: inline-block; width: 30%; margin:15px;}
+
+#garden {
+	display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#flowers { display: inline-block; width: 45%; margin:15px;}
+#cabbages { display: inline-block; width: 45%; margin:15px;}
+
+#bike {
+	display: block;
+    margin: auto;
+    border: 2px;
+    padding: 8px;
+    width: 90%;
+}
+
+#biketrail { display: inline-block; width: 45%; margin:15px;}
+#m_trail { display: inline-block; width: 45%; margin:15px;}
+
+#hikes {
+	display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#rainier {
+	display: inline-block;
+    margin: auto;
+    width: 45%;	
+}
+
+#yosemite {
+	display: inline-block;
+    margin: auto;
+    width: 45%;	
+}
+
+#trails {
+	display: block;
+    margin: auto;
+    width: 90%;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        font-size: 90%;
+        background-color: white;
+    }
+
+    .Menu {
+        display: block;
+        width: 100%;
+        margin: auto;
+    } 
+     
+    #rainier, #yosemite {
+        display: block;
+        margin: auto;
+        width: 100%; 
+    } 
+}
+
+
