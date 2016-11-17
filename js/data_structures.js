@@ -9,10 +9,10 @@ for (var i = 0; i < names.length; i++) {
 	horse['name'] = names[i];
 	horse['color'] = colors[i];
 	
-	console.log("The horse's name is " + horse['name'] + ".");
-	console.log("The horse's color is " + horse.color + ".");
-	console.log("-------------------------------");
-}
+	console.log("The " + horse['color'] + " horse's name is " + horse['name'] + ".");
+};
+
+console.log("--------------------------------")
 
 function car(year, color, brand){
 	this.year = year;
@@ -29,6 +29,23 @@ var smallCar = new car(2010, "blue", "Honda Fit");
 console.log("The old car is a " + oldCar.color + " " + oldCar.year+ " "+ oldCar.brand + ".");
 oldCar.accelerate();
 oldCar.honk();
-console.log("The small car is a " + smallCar.year+ " " + smallCar.brand + ".");
+console.log("The small car is a " + smallCar.color + " "+ smallCar.year+ " " + smallCar.brand + ".");
 smallCar.accelerate();
 smallCar.honk();
+
+console.log("************");
+
+for (var p in oldCar) {
+    if (oldCar.hasOwnProperty(p)) {
+        console.log("The old car's " + p + " is " + oldCar[p] +".")        
+    };    
+};
+
+console.log("************");
+
+for (var p in smallCar) {
+    if (smallCar.hasOwnProperty(p)) {
+        console.log("The small car's " + p + " is " + smallCar[p] +".")
+    };
+};
+
