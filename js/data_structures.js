@@ -26,7 +26,7 @@ function car(year, color, brand){
 var oldCar = new car(1950, "red", "Ford Mustang");
 var smallCar = new car(2010, "blue", "Honda Fit");
 
-console.log("The old car is a " + oldCar.year+ " "+ oldCar.brand + ".");
+console.log("The old car is a " + oldCar.color + " " + oldCar.year+ " "+ oldCar.brand + ".");
 oldCar.accelerate();
 oldCar.honk();
 console.log("The small car is a " + smallCar.year+ " " + smallCar.brand + ".");
