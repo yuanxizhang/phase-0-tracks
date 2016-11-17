@@ -13,3 +13,22 @@ for (var i = 0; i < names.length; i++) {
 	console.log("The horse's color is " + horse.color + ".");
 	console.log("-------------------------------");
 }
+
+function car(year, color, brand){
+	this.year = year;
+	this.color = color;
+	this.brand = brand;
+	
+	this.accelerate = function() {console.log("Vroom! Vroom!")};
+	this.honk = function() {console.log("Beep! Beep!")};
+}
+
+var oldCar = new car(1950, "red", "Ford Mustang");
+var smallCar = new car(2010, "blue", "Honda Fit");
+
+console.log("The old car is a " + oldCar.year+ " "+ oldCar.brand + ".");
+oldCar.accelerate();
+oldCar.honk();
+console.log("The small car is a " + smallCar.year+ " " + smallCar.brand + ".");
+smallCar.accelerate();
+smallCar.honk();
