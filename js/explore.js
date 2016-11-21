@@ -1,0 +1,8 @@
+// step 1: split the string into an array of individual letters, 
+// steo 2: reverse the order of the letter array
+// step 3: join the new letter array into a new string, return the new string
+function reverse(str){
+	return str.split('').reverse().join('');
+};
+
+console.log(reverse("potato"));
