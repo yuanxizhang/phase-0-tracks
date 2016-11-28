@@ -1,0 +1,15 @@
+SELECT user.user_name, user.home_town, business.business_name, business.business_location, review.stars, review.comment
+FROM review
+INNER JOIN user ON review.user_id = user.id_u
+INNER JOIN business ON review.business_id = business.id_b;
+
+Jane Doe|Oakland, CA|Best Bagels|San Jose, CA|5|Great food! Excellent Services!
+John Foodie|San Jose, CA|Gogo Frozen Yogurt|Berkeley, CA|4|I will recommend this place!
+
+SELECT user.user_name, user.home_town, business.business_name, business.business_location, review.stars, review.comment
+FROM review
+INNER JOIN user ON review.user_id = user.id_u
+INNER JOIN business ON review.business_id = business.id_b
+WHERE business_name = "Best Bagels";
+
+Jane Doe|Oakland, CA|Best Bagels|San Jose, CA|5|Great food! Excellent Services!
