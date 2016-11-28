@@ -1,0 +1,52 @@
+select * from property;
+1|1234 Windmill Ave, Moraga, CA 95000|1|1|3000|2
+2|1020 Sunset Blvd, San Francisco, CA 94001|0|0|5000|1
+3|2030 University Ave, Berkeley, CA 94701|0|0|3600|2
+
+select * from renter;                                       
+1|James Smith|415-123-4567|760|90000|2015-1-1|2017-12-31|1
+2|Jane Smart|510-234-5678|800|55000|2014-6-1|2016-8-31|3
+3|Jeff Sorenson|415-678-5432|750|80000|2012-1-1|2016-12-31|2
+
+UPDATE renter SET move_out_date = "2017-5-31" WHERE renter_name = "Jane Smart";
+
+select * from renter WHERE renter_name = "Jane Smart";                                       
+2|Jane Smart|510-234-5678|800|55000|2014-6-1|2017-5-31|3
+
+SELECT property.*, renter.* FROM property JOIN renter ON property.id_p = renter.property_id;
+1|1234 Windmill Ave, Moraga, CA 95000|1|1|3000|2|1|James Smith|415-123-4567|760|90000|2015-1-1|2017-12-31|1
+3|2030 University Ave, Berkeley, CA 94701|0|0|3600|2|2|Jane Smart|510-234-5678|800|55000|2014-6-1|2017-5-31|3
+2|1020 Sunset Blvd, San Francisco, CA 94001|0|0|5000|1|3|Jeff Sorenson|415-678-5432|750|80000|2012-1-1|2016-12-31|2
+
+SELECT property.property_address, property.rent, renter.renter_name, renter.annual_income, renter.move_in_date FROM property JOIN renter ON property.id_p = renter.property_id;
+1234 Windmill Ave, Moraga, CA 95000|3000|James Smith|90000|2015-1-1
+2030 University Ave, Berkeley, CA 94701|3600|Jane Smart|55000|2014-6-1
+1020 Sunset Blvd, San Francisco, CA 94001|5000|Jeff Sorenson|80000|2012-1-1
+
+SELECT * FROM property_owner;
+1|Mike Malone|1234 5th Ave, Salinas, CA 94000|415-123-1234|mikemalone@gmail.com
+2|Nathan Nevaro|5678 9th St, San Jose, CA 94001|415-321-4321|nathannevaro@gmail.com
+3|Ben Bonner|4321 6th Ave, Oakland, CA 94700|510-123-4321|benbonner@gmail.com
+
+DELETE FROM property_owner WHERE owner_name = "Ben Bonner";
+
+SELECT * from property_owner;
+1|Mike Malone|1234 5th Ave, Salinas, CA 94000|415-123-1234|mikemalone@gmail.com
+2|Nathan Nevaro|5678 9th St, San Jose, CA 94001|415-321-4321|nathannevaro@gmail.com
+
+INSERT INTO property_owner (owner_name, owner_address, owner_phone, owner_email) 
+VALUES ("Susan Rich", "8090 Post Street, San Francisco, CA 93003", "415-345-6789","susanrich@gmail.com");
+   
+SELECT property_owner.owner_name, property.property_address, property.rent FROM property_owner LEFT OUTER JOIN property ON property.owner_id = property_owner.id_o;
+Mike Malone|1020 Sunset Blvd, San Francisco, CA 94001|5000
+Nathan Nevaro|1234 Windmill Ave, Moraga, CA 95000|3000
+Nathan Nevaro|2030 University Ave, Berkeley, CA 94701|3600
+Susan Rich||
+
+SELECT property_owner.owner_name, property.property_address, property.rent, renter.renter_name, renter.move_in_date 
+FROM property 
+INNER JOIN property_owner ON property.owner_id = property_owner.id_o 
+INNER JOIN renter ON renter.property_id = property.id_p;
+Nathan Nevaro|1234 Windmill Ave, Moraga, CA 95000|3000|James Smith|2015-1-1
+Nathan Nevaro|2030 University Ave, Berkeley, CA 94701|3600|Jane Smart|2014-6-1
+Mike Malone|1020 Sunset Blvd, San Francisco, CA 94001|5000|Jeff Sorenson|2012-1-1
